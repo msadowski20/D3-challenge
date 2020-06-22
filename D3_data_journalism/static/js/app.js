@@ -1,4 +1,3 @@
-
 var svgArea = d3.select("#scatter").select("svg");
 
 var svgHeight = 600
