@@ -84,6 +84,7 @@ function renderState(stateGroup, newXScale, newYScale, activeXaxis, activeYaxis)
 
 // function used for updating circles group with new tooltip
 function updateToolTip(activeXaxis, activeYaxis, circlesGroup) {
+  
   var xLabel;
   if (activeXaxis === "poverty") {
     xLabel = "Poverty:";
@@ -180,8 +181,7 @@ d3.csv("data/data.csv").then(function (censusData, err) {
     var stateAbbr = chartGroup.append("g");
 
     // append initial abbreviations
-    var stateGroup = stateAbbr
-      .selectAll("text")
+    var stateGroup = stateAbbr.selectAll("text")
       .data(censusData)
       .enter()
       .append("text")
