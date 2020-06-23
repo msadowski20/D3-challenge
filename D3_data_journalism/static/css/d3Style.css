@@ -48,9 +48,10 @@
   color: #fff;
   text-align: center;
   text-transform: capitalize;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(51, 115, 167);
   border-radius: 4px;
 }
+
 
 /* Mobile Rules */
 @media screen and (max-width: 530px) {
