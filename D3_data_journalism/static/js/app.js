@@ -114,9 +114,7 @@ function updateToolTip(activeXaxis, activeYaxis, circlesGroup) {
       } else if (activeXaxis === "age") {
         return `${d.state}<br>${xLabel} ${d[activeXaxis]}<br>${yLabel} ${d[activeYaxis]}%`;
       } else {
-        return `${d.state}<br>${xLabel} ${d[activeXaxis].toLocaleString(
-          "en-US",
-          {
+        return `${d.state}<br>${xLabel} ${d[activeXaxis].toLocaleString("en-US", {
             style: "currency",
             currency: "USD",
           }
